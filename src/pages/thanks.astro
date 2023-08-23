@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Thanks" showFooter={false}>
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div
+      class="breadcrumbs d-flex align-items-center"
+      style="background-image: url('assets/img/hero-carousel/hero-carousel-3.jpg'); height: 100vh"
+    >
+      <div
+        class="container position-relative d-flex flex-column align-items-center"
+        data-aos="fade"
+      >
+        <h2>Thank you for the message!</h2>
+        <ol>
+          <li><a href="/">Go back home</a></li>
+          <li>Thanks</li>
+        </ol>
+      </div>
+    </div><!-- End Breadcrumbs -->
+    <!-- <div class="blue-bar"></div> -->
+  </main><!-- End #main -->
+</Layout>
+
+<style>
+  /* Custom CSS for the blue bar */
+  .blue-bar {
+    background-color: #009fde;
+    height: 20px; /* Adjust the height as needed */
+  }
+</style>

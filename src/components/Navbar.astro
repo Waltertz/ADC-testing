@@ -1,0 +1,74 @@
+<header id="header" class="header d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <a href="/" class="logo d-flex align-items-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/grey.png" alt="" width="80" height="40">  
+      <!--<h1>ADC<span>.</span></h1>-->
+    </a>
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="/" id="home">Home</a></li>
+        <li><a href="about" id="about">About</a></li>
+        <li><a href="service-details" id="service-details">Services</a></li>
+        
+
+        <li class="dropdown"><a href="#" id="project"><span>Projects</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <ul>
+            <li><a href="energy-details">Energy</a></li>
+            <li><a href="women-led">Women-Led</a></li>
+            <li><a href="agribusines-details">Agribusiness</a></li>
+            <li><a href="youth">Youth</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown" id="team"><a href="team"><span>Team</span> </i></a>
+        </li>
+        </li>    
+        <li><a href="partners" id="partners">Partners</a></li>
+ 
+        <li><a href="contact" id="contact">Contact</a></li>
+      </ul>
+    </nav><!-- .navbar -->
+  </div>
+</header>
+
+<script>
+  switch (window.location.pathname) {
+    case "/":
+      document.querySelector('#home').classList.add('active')
+      break;
+    case "/about":
+      document.querySelector('#about').classList.add('active')
+      break;
+    case "/service-details":
+      document.querySelector('#service-details').classList.add('active')
+      break;
+    case "/energy-details":
+      document.querySelector('#project').classList.add('active')
+      break;
+    case "/women-led":
+      document.querySelector('#project').classList.add('active')
+      break;
+    case "/agribusines-details":
+      document.querySelector('#project').classList.add('active')
+      break;
+    case "/youth":
+      document.querySelector('#project').classList.add('active')
+      break;
+    case "/team":
+      document.querySelector('#team').classList.add('active')
+      break;
+    case "/partners":
+      document.querySelector('#partners').classList.add('active')
+      break;
+    case "/contact":
+      document.querySelector('#contact').classList.add('active')
+      break;
+    default:
+      break;
+  }
+</script>
