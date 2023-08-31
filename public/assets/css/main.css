@@ -302,6 +302,9 @@ section {
 # Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
+  .video-container {
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
   .navbar {
     padding: 0;
   }
@@ -451,6 +454,9 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
+  .video-container {
+    padding-bottom: 200%;
+  }
   .navbar {
     position: fixed;
     top: 0;
@@ -3147,7 +3153,6 @@ section {
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
 }
 
